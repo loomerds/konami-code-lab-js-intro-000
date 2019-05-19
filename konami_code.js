@@ -14,15 +14,11 @@ const codes = [
 let newArr = [];
 
 function init() {
-  var keyListener = document.body.addEventListener('keydown', (e)=>{
-    e.stopPropagation();
-    newArr.push(e.key);
-    compareArrs();
-  })
+  var keyListener = document.body.addEventListener('keydown', compareArrs);
 }
 
-function compareArrs() {
-
+function compareArrs(e) {
+  newArr.push(e.key)
   for(let i=0; i<newArr.length; i++) {
     if(newArr[i]!==codes[i]) {
       if(newArr[i]===codes[0]) {
@@ -37,6 +33,6 @@ function compareArrs() {
     }
   }
   if(newArr.length===codes.length) {
-    alert("You matched the codes!")
+    alert("You matched the codes!");
   }
 }
