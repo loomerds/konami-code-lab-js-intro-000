@@ -15,7 +15,6 @@ let newArr = [];
 
 function init() {
   var keyListener = document.body.addEventListener('keydown', (e)=>{
-    e.stopPropagation();
     newArr.push(e.key);
     compareArrs();
   })
