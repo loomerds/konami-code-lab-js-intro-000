@@ -18,7 +18,7 @@ function init() {
   //var keyListener = document.body.addEventListener('keydown', (e)=>{
     //newArr.push(e.key);
     //compareArrs();
-  })
+  //})
 }
 
 function compareArrs(e) {
