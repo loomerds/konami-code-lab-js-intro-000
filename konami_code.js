@@ -15,10 +15,6 @@ let newArr = [];
 
 function init() {
   var keyListener = document.body.addEventListener('keydown', compareArrs);
-  //var keyListener = document.body.addEventListener('keydown', (e)=>{
-    //newArr.push(e.key);
-    //compareArrs();
-  //})
 }
 
 function compareArrs(e) {
@@ -37,6 +33,6 @@ function compareArrs(e) {
     }
   }
   if(newArr.length===codes.length) {
-    alert("You matched the codes!")
+    alert("You matched the codes!");
   }
 }
