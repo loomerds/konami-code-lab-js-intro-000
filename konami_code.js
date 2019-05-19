@@ -14,7 +14,7 @@ const codes = [
 let newArr = [];
 
 function init() {
-  var keyListener = document.boody.addEventListener('keydown', compareArrs);
+  var keyListener = document.body.addEventListener('keydown', compareArrs);
   //var keyListener = document.body.addEventListener('keydown', (e)=>{
     //newArr.push(e.key);
     //compareArrs();
