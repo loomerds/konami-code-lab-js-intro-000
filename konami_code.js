@@ -14,14 +14,15 @@ const codes = [
 let newArr = [];
 
 function init() {
-  var keyListener = document.body.addEventListener('keydown', (e)=>{
-    newArr.push(e.key);
-    compareArrs();
+  var keyListener = document.boody.addEventListener('keydown', compareArrs);
+  //var keyListener = document.body.addEventListener('keydown', (e)=>{
+    //newArr.push(e.key);
+    //compareArrs();
   })
 }
 
 function compareArrs() {
-
+  newArr.push(e.key)
   for(let i=0; i<newArr.length; i++) {
     if(newArr[i]!==codes[i]) {
       if(newArr[i]===codes[0]) {
